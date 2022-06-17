@@ -14,10 +14,9 @@
     </tr>
     <tr>
         <td align="center">1</td>
-        <td><a href="https://www.acmicpc.net/problem/2557">입출력과 사칙연산</a></td>
+        <td><a href="https://www.acmicpc.net/step/1">입출력과 사칙연산</a></td>
         <td align="center"><code>14/14</code></td>
-        <td align="center"><a href="https://github.com/yeojin822/backjoon-coding-test/blob/main/src/main/java/%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B3%BC%EC%82%AC%EC%B9%99%EC%97%B0%EC%82%B0/Main.java">
-          <span style="background-color: #5cb85c">완료</span></a></td>
+        <td style="background-color: #5cb85c;" align="center"><a style="color: white; font-weight: bold; " href="https://github.com/yeojin822/backjoon-coding-test/blob/main/src/main/java/%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B3%BC%EC%82%AC%EC%B9%99%EC%97%B0%EC%82%B0/Main.java">완료</a></td>
     </tr>
   
 </table>
