@@ -1,9 +1,9 @@
 # backjoon-coding-test
-백준 코딩 테스트 단계별로 풀어보기
 
 [![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=xlzt2002)](https://solved.ac/xlzt2002)
 
 ---
+#### [백준 코딩 테스트](https://www.acmicpc.net/step) 단계별로 풀어보기
 
 <table>
     <tr>
