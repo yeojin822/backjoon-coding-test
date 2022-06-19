@@ -21,13 +21,13 @@
     <tr>
         <td align="center">2</td>
         <td><a href="https://www.acmicpc.net/step/4">조건문</a></td>
-        <td><img align="center" src="https://img.shields.io/badge/진행중-0076C0?style=flat-square"/></td>
-        <td><a href="#"><code>00/07</code></a></td>
+        <td><img align="center" src="https://img.shields.io/badge/완료-6DB33F?style=flat-square"/></td>
+        <td><a href="https://github.com/yeojin822/backjoon-coding-test/blob/main/src/main/java/%EC%A1%B0%EA%B1%B4%EB%AC%B8/Main.java"><code>07/07</code></a></td>
     </tr>
         <tr>
         <td align="center">3</td>
         <td><a href="https://www.acmicpc.net/step/3">반복문</a></td>
-        <td></td>
+        <td><img align="center" src="https://img.shields.io/badge/진행중-0076C0?style=flat-square"/></td>
         <td><a href="#"><code>00/14</code></a></td>
     </tr>
         <tr>
