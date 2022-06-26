@@ -1,4 +1,4 @@
-# backjoon-coding-test
+# baekjoon-coding-test
 
 [![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=xlzt2002)](https://solved.ac/xlzt2002)
 
