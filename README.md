@@ -27,13 +27,13 @@
         <tr>
         <td align="center">3</td>
         <td><a href="https://www.acmicpc.net/step/3">반복문</a></td>
-        <td><img align="center" src="https://img.shields.io/badge/진행중-0076C0?style=flat-square"/></td>
-        <td><a href="#"><code>00/14</code></a></td>
+        <td><img align="center" src="https://img.shields.io/badge/완료-6DB33F?style=flat-square"/></td>
+        <td><a href="https://github.com/yeojin822/baekjoon-coding-test/blob/main/src/main/java/%EB%B0%98%EB%B3%B5%EB%AC%B8/Main.java"><code>14/14</code></a></td>
     </tr>
         <tr>
         <td align="center">4</td>
         <td><a href="https://www.acmicpc.net/step/6">1차원 배열</a></td>
-        <td></td>
+        <td><img align="center" src="https://img.shields.io/badge/진행중-0076C0?style=flat-square"/></td>
         <td><a href="#"><code>00/07</code></a></td>
     </tr>
         <tr>
