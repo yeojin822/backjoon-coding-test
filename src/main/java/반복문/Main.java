@@ -268,49 +268,49 @@ package 반복문;
 //    }
 //}
 
-///**
-// * 더하기 사이클
-// */
-//import java.io.*;
-//public class Main {
-//    public static void main(String[] args) throws IOException {
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        String[] array = new String[2];
-//        int num;
-//        int cnt = 0;
-//        String N = br.readLine();
-//        if(Integer.parseInt(N) < 10){
-//            num = Integer.parseInt(N);
-//        }else{
-//          num = Integer.parseInt(String.valueOf(N.charAt(0))) + Integer.parseInt(String.valueOf(N.charAt(1)));
-//        }
-//
-//
-//        while(!N.equals(array[0]+array[1]) && num != 0){
-//            String numS = num+"";
-//            if(array[0] == null && array[1] == null) {
-//                if (Integer.parseInt(N) < 10) {
-//                    array[0] = "0";
-//                    array[1] = N;
-//                } else {
-//                    array[1] = String.valueOf(N.charAt(1));
-//                }
-//            }
-//            array[0] = array[1];
-//            if(num < 10){
-//                array[1] = String.valueOf(num);
-//            }else{
-//                array[1] = String.valueOf(numS.charAt(1));
-//            }
-//
-//            num = Integer.parseInt(array[0]) + Integer.parseInt(array[1]);
-//            cnt++;
-//        }
-//        if (num == 0){
-//            System.out.println(1);
-//        }else{
-//            System.out.println(cnt);
-//        }
-//
-//    }
-//}
+/**
+ * 더하기 사이클
+ */
+import java.io.*;
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String[] array = new String[2];
+        int num;
+        int cnt = 0;
+        String N = br.readLine();
+        if(Integer.parseInt(N) < 10){
+            num = Integer.parseInt(N);
+            N= "0"+N;
+        }else{
+          num = Integer.parseInt(String.valueOf(N.charAt(0))) + Integer.parseInt(String.valueOf(N.charAt(1)));
+        }
+        if(num > 0) {
+            while (!N.equals(array[0] + array[1])) {
+                String numS = num + "";
+                if (array[0] == null && array[1] == null) {
+                    if (Integer.parseInt(N) < 10) {
+                        array[0] = "0";
+                        array[1] = N;
+                    } else {
+                        array[1] = String.valueOf(N.charAt(1));
+                    }
+                }
+                array[0] = array[1];
+                if (num < 10) {
+                    array[1] = String.valueOf(num);
+                } else {
+                    array[1] = String.valueOf(numS.charAt(1));
+                }
+
+                num = Integer.parseInt(array[0]) + Integer.parseInt(array[1]);
+                cnt++;
+            }
+        }else{
+            cnt++;
+        }
+
+        System.out.println(cnt);
+
+    }
+}
