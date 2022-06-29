@@ -39,13 +39,13 @@
         <tr>
         <td align="center">5</td>
         <td><a href="https://www.acmicpc.net/step/5">함수</a></td>
-        <td><img align="center" src="https://img.shields.io/badge/진행중-0076C0?style=flat-square"/></td>
-        <td><a href="#"><code>00/03</code></a></td>
+        <td><img align="center" src="https://img.shields.io/badge/완료-6DB33F?style=flat-square"/></td>
+        <td><a href="https://github.com/yeojin822/baekjoon-coding-test/blob/main/src/main/java/%ED%95%A8%EC%88%98/Main.java"><code>03/03</code></a></td>
     </tr>
         <tr>
         <td align="center">6</td>
         <td><a href="https://www.acmicpc.net/step/7">문자열</a></td>
-        <td></td>
+        <td><img align="center" src="https://img.shields.io/badge/진행중-0076C0?style=flat-square"/></td>
         <td><a href="#"><code>00/10</code></a></td>
     </tr>
         <tr>
