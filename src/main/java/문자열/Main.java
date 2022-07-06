@@ -59,7 +59,7 @@ public class Main {
             }
         }
         String test = Arrays.toString(array);
-        test = test.replace("[","").replace("]","");
+        test = test.replace("[","").replace("]","").replace("," , "");
         System.out.println(test);
     }
 }
