@@ -94,44 +94,65 @@ package 문자열;
 //    }
 //}
 
-///**
-// * 단어 공부
-// */
+/**
+ * 단어 공부
+ */
 //import java.io.*;
 //public class Main {
 //    public static void main(String[] args) throws IOException {
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        String word = br.readLine().toUpperCase();
+//        int[] array = new int[26];
 //        String answer = "";
 //        int max = 0;
-//        char ch = 0;
-//        boolean dist = false;
+//        char ch = '?';
 //
 //        for (int i = 0; i < word.length(); i++) {
-//            if(word.indexOf(word.charAt(i)) == i) {
-//                int cnt = 0;
-//                for (int j = 0; j < word.length(); j++) {
-//                    if(word.charAt(i) == word.charAt(j)){
-//                        cnt++;
-//                    }
-//                }
-//                if(cnt > max){
-//                    max = cnt;
-//                    ch = word.charAt(i);
-//                }else if(cnt == max){
-//                    dist = true;
+//            for (int j = 65; j < 91; j++) {
+//                if((int)word.charAt(i) == j){
+//                    array[j-65]++;
 //                    break;
 //                }
 //            }
 //        }
 //
-//        if(dist){
-//            System.out.println("?");
-//        }else{
-//            System.out.println(ch);
+//        for (int i = 0; i < array.length; i++) {
+//            if(array[i] > max){
+//                max = array[i];
+//                ch = (char) (i + 65);
+//            } else if (array[i] == max) {
+//                ch = '?';
+//            }
 //        }
+//        System.out.println(ch);
 //    }
 //}
 
+import java.io.*;
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String word = br.readLine().toUpperCase();
+        String answer = "";
+        int max = 0;
+        char ch = '?';
 
-
+        for (int i = 0; i < word.length(); i++) {
+            if (word.indexOf(word.charAt(i)) == i) {
+                int cnt = 0;
+                for (int j = 0; j < word.length(); j++) {
+                    if (word.charAt(i) == word.charAt(j)) {
+                        cnt++;
+                    }
+                }
+                if (cnt > max) {
+                    max = cnt;
+                    ch = word.charAt(i);
+                } else if (cnt == max) {
+                    ch = '?';
+                }
+            }
+        }
+        System.out.println(ch);
+    }
+}
