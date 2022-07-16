@@ -128,31 +128,39 @@ package 문자열;
 //    }
 //}
 
+/**
+ * 단어의 개수
+ */
+//import java.io.*;
+//public class Main {
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String word[] = br.readLine().trim().split(" ");
+//        if(word[0].equals("")){
+//            System.out.println(0);
+//        }else {
+//            System.out.println(word.length);
+//        }
+//    }
+//}
+
+/**
+ * 상수
+ */
 import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String word = br.readLine().toUpperCase();
-        String answer = "";
-        int max = 0;
-        char ch = '?';
+        String word = br.readLine();
+        // 문자열 reverse
+        StringBuffer sb = new StringBuffer(word);
+        String reverse = sb.reverse().toString();
 
-        for (int i = 0; i < word.length(); i++) {
-            if (word.indexOf(word.charAt(i)) == i) {
-                int cnt = 0;
-                for (int j = 0; j < word.length(); j++) {
-                    if (word.charAt(i) == word.charAt(j)) {
-                        cnt++;
-                    }
-                }
-                if (cnt > max) {
-                    max = cnt;
-                    ch = word.charAt(i);
-                } else if (cnt == max) {
-                    ch = '?';
-                }
-            }
+        if(Integer.parseInt(reverse.split(" ")[0]) > Integer.parseInt(reverse.split(" ")[1])){
+            System.out.println(reverse.split(" ")[0]);
+        }else{
+            System.out.println(reverse.split(" ")[1]);
         }
-        System.out.println(ch);
+
     }
 }
