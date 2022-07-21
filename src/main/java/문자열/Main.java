@@ -147,20 +147,64 @@ package 문자열;
 /**
  * 상수
  */
+//import java.io.*;
+//public class Main {
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String word = br.readLine();
+//        // 문자열 reverse
+//        StringBuffer sb = new StringBuffer(word);
+//        String reverse = sb.reverse().toString();
+//
+//        if(Integer.parseInt(reverse.split(" ")[0]) > Integer.parseInt(reverse.split(" ")[1])){
+//            System.out.println(reverse.split(" ")[0]);
+//        }else{
+//            System.out.println(reverse.split(" ")[1]);
+//        }
+//
+//    }
+//}
+
+/**
+ * 다이얼
+ */
 import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String word = br.readLine();
-        // 문자열 reverse
-        StringBuffer sb = new StringBuffer(word);
-        String reverse = sb.reverse().toString();
-
-        if(Integer.parseInt(reverse.split(" ")[0]) > Integer.parseInt(reverse.split(" ")[1])){
-            System.out.println(reverse.split(" ")[0]);
-        }else{
-            System.out.println(reverse.split(" ")[1]);
+       int time = 0;
+        for (int i = 0; i < word.length(); i++) {
+            switch (word.charAt(i)){
+                case 'A','B','C' :
+                    time += 3;
+                    break;
+                case 'D','E','F' :
+                    time += 4;
+                    break;
+                case 'G','H','I' :
+                    time += 5;
+                    break;
+                case 'J','K','L' :
+                    time += 6;
+                    break;
+                case 'M','N','O' :
+                    time += 7;
+                    break;
+                case 'P','Q','R','S' :
+                    time += 8;
+                    break;
+                case 'T','U','V' :
+                    time += 9;
+                    break;
+                case 'W','X','Y','Z' :
+                    time += 10;
+                    break;
+                default:
+                    time = 2;
+                    break;
+            }
         }
-
+        System.out.println(time);
     }
 }
