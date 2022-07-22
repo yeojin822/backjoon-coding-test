@@ -168,43 +168,65 @@ package 문자열;
 /**
  * 다이얼
  */
+//import java.io.*;
+//public class Main {
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String word = br.readLine();
+//       int time = 0;
+//        for (int i = 0; i < word.length(); i++) {
+//            switch (word.charAt(i)){
+//                case 'A','B','C' :
+//                    time += 3;
+//                    break;
+//                case 'D','E','F' :
+//                    time += 4;
+//                    break;
+//                case 'G','H','I' :
+//                    time += 5;
+//                    break;
+//                case 'J','K','L' :
+//                    time += 6;
+//                    break;
+//                case 'M','N','O' :
+//                    time += 7;
+//                    break;
+//                case 'P','Q','R','S' :
+//                    time += 8;
+//                    break;
+//                case 'T','U','V' :
+//                    time += 9;
+//                    break;
+//                case 'W','X','Y','Z' :
+//                    time += 10;
+//                    break;
+//                default:
+//                    time = 2;
+//                    break;
+//            }
+//        }
+//        System.out.println(time);
+//    }
+//}
+
+/**
+ * 크로아티아 알파벳
+ */
 import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
+        String[] croatia = {"c=","c-","dz=","d-","lj","nj","s=","z="};
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String word = br.readLine();
-       int time = 0;
-        for (int i = 0; i < word.length(); i++) {
-            switch (word.charAt(i)){
-                case 'A','B','C' :
-                    time += 3;
-                    break;
-                case 'D','E','F' :
-                    time += 4;
-                    break;
-                case 'G','H','I' :
-                    time += 5;
-                    break;
-                case 'J','K','L' :
-                    time += 6;
-                    break;
-                case 'M','N','O' :
-                    time += 7;
-                    break;
-                case 'P','Q','R','S' :
-                    time += 8;
-                    break;
-                case 'T','U','V' :
-                    time += 9;
-                    break;
-                case 'W','X','Y','Z' :
-                    time += 10;
-                    break;
-                default:
-                    time = 2;
-                    break;
-            }
+        String croatiaWord = word;
+
+        int cnt = 0;
+        for (int i = 0; i < croatia.length; i++) {
+            int temp = croatiaWord.replaceAll("/", "").length();
+            croatiaWord = croatiaWord.replaceAll(croatia[i],"/");
+            cnt += (temp - croatiaWord.replaceAll("/", "").length()) / croatia[i].length();
         }
-        System.out.println(time);
+        cnt += croatiaWord.replaceAll("/", "").length();
+        System.out.println(cnt);
     }
 }
