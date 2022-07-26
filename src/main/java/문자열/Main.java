@@ -212,21 +212,62 @@ package 문자열;
 /**
  * 크로아티아 알파벳
  */
+//import java.io.*;
+//public class Main {
+//    public static void main(String[] args) throws IOException {
+//        String[] croatia = {"c=","c-","dz=","d-","lj","nj","s=","z="};
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String word = br.readLine();
+//        String croatiaWord = word;
+//
+//        int cnt = 0;
+//        for (int i = 0; i < croatia.length; i++) {
+//            int temp = croatiaWord.replaceAll("/", "").length();
+//            croatiaWord = croatiaWord.replaceAll(croatia[i],"/");
+//            cnt += (temp - croatiaWord.replaceAll("/", "").length()) / croatia[i].length();
+//        }
+//        cnt += croatiaWord.replaceAll("/", "").length();
+//        System.out.println(cnt);
+//    }
+//}
+
+/**
+ * 그룹 단어 체커
+ */
 import java.io.*;
+import java.util.HashSet;
 public class Main {
     public static void main(String[] args) throws IOException {
-        String[] croatia = {"c=","c-","dz=","d-","lj","nj","s=","z="};
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String word = br.readLine();
-        String croatiaWord = word;
-
+        int num = Integer.parseInt(br.readLine());
+        String[] array = new String[num];
         int cnt = 0;
-        for (int i = 0; i < croatia.length; i++) {
-            int temp = croatiaWord.replaceAll("/", "").length();
-            croatiaWord = croatiaWord.replaceAll(croatia[i],"/");
-            cnt += (temp - croatiaWord.replaceAll("/", "").length()) / croatia[i].length();
+
+
+        for (int i = 0; i < num; i++) {
+            array[i] = br.readLine();
         }
-        cnt += croatiaWord.replaceAll("/", "").length();
+        for (int i = 0; i < array.length; i++) {
+            HashSet set = new HashSet();
+            boolean check = true;
+            int temp =  array[i].charAt(0);
+            set.add(array[i].charAt(0));
+            for (int j = 1; j < array[i].length(); j++) {
+                if(temp == array[i].charAt(j)){
+                    continue;
+                }else{
+                    if(set.contains(array[i].charAt(j))){
+                        check = false;
+                        break;
+                    }else{
+                    set.add(array[i].charAt(j));
+                    temp = array[i].charAt(j);
+                    }
+                }
+            }
+           cnt += check ? 1 : 0;
+        }
+
         System.out.println(cnt);
     }
 }
