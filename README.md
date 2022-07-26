@@ -45,13 +45,13 @@
         <tr>
         <td align="center">6</td>
         <td><a href="https://www.acmicpc.net/step/7">문자열</a></td>
-        <td><img align="center" src="https://img.shields.io/badge/진행중-0076C0?style=flat-square"/></td>
-        <td><a href="#"><code>00/10</code></a></td>
+        <td><img align="center" src="https://img.shields.io/badge/완료-6DB33F?style=flat-square"/></td>
+        <td><a href="https://github.com/yeojin822/baekjoon-coding-test/blob/main/src/main/java/%EB%AC%B8%EC%9E%90%EC%97%B4/Main.java"><code>10/10</code></a></td>
     </tr>
         <tr>
         <td align="center">7</td>
         <td><a href="https://www.acmicpc.net/step/8">기본 수학 1</a></td>
-        <td></td>
+        <td><img align="center" src="https://img.shields.io/badge/진행중-0076C0?style=flat-square"/></td>
         <td><a href="#"><code>00/08</code></a></td>
     </tr>
         <tr>
